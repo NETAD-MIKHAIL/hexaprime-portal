@@ -1,9 +1,3 @@
-
-export const metadata = {
-  title: "Hexaprime Portal | Sharing Care, Beyond the line with Hexaprime!",
-  description: "Hexaprime Inc. charity sweepstakes landing page supporting communities affected by disasters."
-};
-
 "use client";
 
 import Image from "next/image";
@@ -21,7 +15,9 @@ export default function Home() {
     const steps = 100;
     const intervalTime = duration / steps;
 
-    let c = 0, f = 0, v = 0;
+    let c = 0,
+      f = 0,
+      v = 0;
 
     const interval = setInterval(() => {
       c += 150 / steps;

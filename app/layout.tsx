@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Metadata is now correctly in the server layout
 export const metadata: Metadata = {
   title: "Hexaprime Portal | Sharing Care, Beyond the line with Hexaprime!",
   description:
