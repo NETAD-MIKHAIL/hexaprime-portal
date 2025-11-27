@@ -1,10 +1,14 @@
+
+export const metadata = {
+  title: "Hexaprime Portal | Sharing Care, Beyond the line with Hexaprime!",
+  description: "Hexaprime Inc. charity sweepstakes landing page supporting communities affected by disasters."
+};
+
 "use client";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import UsersIcon from "@heroicons/react/24/outline/UsersIcon";
-import CurrencyDollarIcon from "@heroicons/react/24/outline/CurrencyDollarIcon";
-import HandRaisedIcon from "@heroicons/react/24/outline/HandRaisedIcon";
+import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   // Animated counters
