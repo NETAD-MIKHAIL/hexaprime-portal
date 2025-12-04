@@ -37,51 +37,54 @@ export default function Home() {
   return (
     <main className="bg-gray-900 text-white min-h-screen">
 
-      {/* Navigation Bar */}
-      <header className="w-full bg-gray-900/80 backdrop-blur-md fixed top-0 left-0 z-50 border-b border-gray-700">
-        <nav className="max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
-
-          {/* LOGO */}
+      {/* Header with hero image background */}
+      <header className="w-full fixed top-0 left-0 z-50 border-b border-gray-700">
+        {/* Use relative + pseudo bg */}
+        <div className="relative">
+          {/* Hero image as background for header */}
           <Image
-            src="/hexalogo2.png"
-            alt="Hexaprime Logo"
-            width={140}     // increased size
-            height={50}
-            className="object-contain cursor-pointer"
+            src="/kiddiekid.png"
+            alt="Background"
+            fill
+            className="object-cover"
           />
 
-          {/* MENU ITEMS */}
-          <ul className="hidden md:flex items-center space-x-8 text-white/90 font-medium">
+          {/* Header overlay */}
+          <nav className="relative flex justify-between items-center max-w-7xl mx-auto px-8 py-3 bg-gray-900/50 backdrop-blur-md">
+            
+            {/* LOGO */}
+            <Image
+              src="/hexalogo2.png"
+              alt="Hexaprime Logo"
+              width={160}
+              height={50}
+              className="object-contain cursor-pointer"
+            />
 
-            <li className="hover:text-purple-400 cursor-pointer transition">
-              Home |
-            </li>
+            {/* Menu Items */}
+            <ul className="hidden md:flex items-center text-white/90 font-medium">
+              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+                Home <span className="mx-1">|</span>
+              </li>
+              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+                Social Responsibility <span className="mx-1">|</span>
+              </li>
+              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+                About Us
+              </li>
+              <li className="ml-6 px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
+                Sign up
+              </li>
+            </ul>
 
-            <li className="hover:text-purple-400 cursor-pointer transition">
-              Social Responsibility |
-            </li>
+            {/* Mobile Menu Icon */}
+            <div className="md:hidden text-white cursor-pointer text-2xl">
+              ☰
+            </div>
 
-            <li className="hover:text-purple-400 cursor-pointer transition">
-              About Us |
-            </li>
-
-            <li className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-              Sign up
-            </li>
-
-          </ul>
-
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden text-white cursor-pointer text-2xl">
-            ☰
-          </div>
-
-        </nav>
+          </nav>
+        </div>
       </header>
-
-
-      {/* Offset for fixed navbar */}
-      <div className="pt-20"></div>
 
       {/* Hero Section */}
       <section className="relative h-screen">
@@ -96,6 +99,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
