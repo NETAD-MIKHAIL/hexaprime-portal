@@ -45,24 +45,24 @@ export default function Home() {
           <Image
             src="/hexalogo2.png"
             alt="Hexaprime Logo"
-            width={110}     // Adjusted bigger for visibility
-            height={40}
+            width={140}     // increased size
+            height={50}
             className="object-contain cursor-pointer"
           />
 
           {/* MENU ITEMS */}
-          <ul className="hidden md:flex items-center space-x-10 text-white/90 font-medium">
+          <ul className="hidden md:flex items-center space-x-8 text-white/90 font-medium">
 
             <li className="hover:text-purple-400 cursor-pointer transition">
-              Home
+              Home |
             </li>
 
             <li className="hover:text-purple-400 cursor-pointer transition">
-              Social Responsibility
+              Social Responsibility |
             </li>
 
             <li className="hover:text-purple-400 cursor-pointer transition">
-              About Us
+              About Us |
             </li>
 
             <li className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
@@ -78,6 +78,7 @@ export default function Home() {
 
         </nav>
       </header>
+
 
       {/* Offset for fixed navbar */}
       <div className="pt-20"></div>
