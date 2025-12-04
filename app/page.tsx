@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-gray-900 text-white min-h-screen">
+    <main className="bg-gray-200 text-white min-h-screen">
 
       {/* Header */}
       <header className="w-full fixed top-0 left-0 z-50 border-0 shadow-none">
