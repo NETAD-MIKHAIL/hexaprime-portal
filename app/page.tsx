@@ -52,9 +52,9 @@ export default function Home() {
 
           {/* MENU ITEMS */}
           <ul className="hidden md:flex items-center space-x-8 text-white/90 font-medium">
-            <li className="hover:text-purple-400 cursor-pointer transition">Home</li>
-            <li className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</li>
-            <li className="hover:text-purple-400 cursor-pointer transition">About Us</li>
+            <li className="hover:text-purple-400 cursor-pointer transition">Home |</li>
+            <li className="hover:text-purple-400 cursor-pointer transition">Social Responsibility |</li>
+            <li className="hover:text-purple-400 cursor-pointer transition">About Us |</li>
             <li className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer">
               Sign up
             </li>
