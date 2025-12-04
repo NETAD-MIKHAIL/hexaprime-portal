@@ -97,13 +97,7 @@ export default function Home() {
         
         {/* Overlay content */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
-          <Image
-            src="/hexalogo2.png"
-            alt="Hexaprime Logo Overlay"
-            width={180}
-            height={60}
-            className="mb-6 opacity-90"
-          />
+          {/* Logo removed */}
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
