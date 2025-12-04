@@ -1,6 +1,5 @@
 "use client";
 
-import { Roboto } from 'next/font/google';
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
@@ -10,8 +9,7 @@ export default function Home() {
   const [communities, setCommunities] = useState(0);
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
-  const roboto = Roboto({weight: '400',subsets: ['latin'],});
-
+  
   useEffect(() => {
     const duration = 2000;
     const steps = 100;
