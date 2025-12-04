@@ -43,7 +43,7 @@ export default function Home() {
 
           {/* LOGO */}
           <Image
-            src="/hexalogo.png"   // your logo file
+            src="/hexalogo2.png"   // your logo file
             alt="Hexaprime Logo"
             width={80}           // adjust size if needed
             height={20}
