@@ -40,15 +40,15 @@ export default function Home() {
       {/* Header */}
       <header className="w-full fixed top-0 left-0 z-50 border-0 shadow-none">
         {/* Background image overlay */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 -z-10">
           <Image
             src="/kiddiekid.png"
-            alt="Header Background"
+            alt="Background"
             fill
             className="object-cover"
           />
           {/* Semi-transparent overlay */}
-          <div className="absolute inset-0 bg-gray-900/70 backdrop-blur-md"></div>
+          <div className="absolute inset-0 bg-gray-900/50 backdrop-blur-md"></div>
         </div>
 
         <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
@@ -93,11 +93,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen">
-        <Image src="/kiddiekid.png" alt="Hero" fill className="object-cover" />
-        
+        {/* Remove background image since header already covers */}
         {/* Overlay content */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
-          {/* Logo removed */}
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
@@ -107,6 +105,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
