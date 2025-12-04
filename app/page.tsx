@@ -51,8 +51,8 @@ export default function Home() {
             <Image
               src="/hexalogo2.png"
               alt="Hexaprime Logo"
-              width={160}
-              height={50}
+              width={170}
+              height={60}
               className="block object-contain cursor-pointer"
             />
           </div>
