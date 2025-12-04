@@ -38,7 +38,7 @@ export default function Home() {
     <main className="bg-gray-900 text-white min-h-screen">
 
       {/* Header */}
-      <header className="w-full fixed top-0 left-0 z-50 bg-gray-900/90 backdrop-blur-md shadow-md">
+      <header className="w-full fixed top-0 left-0 z-50 bg-gray-900/90 backdrop-blur-md border-0 shadow-none">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
 
         {/* LOGO */}
