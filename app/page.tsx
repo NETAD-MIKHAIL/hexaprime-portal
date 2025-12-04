@@ -37,59 +37,56 @@ export default function Home() {
   return (
     <main className="bg-gray-900 text-white min-h-screen">
 
-      {/* Header with hero image background */}
-      <header className="w-full fixed top-0 left-0 z-50 border-b border-gray-700">
-        {/* Use relative + pseudo bg */}
-        <div className="relative">
-          {/* Hero image as background for header */}
+      {/* Header */}
+      <header className="w-full fixed top-0 left-0 z-50 bg-gray-900/40 backdrop-blur-md border-b border-gray-700">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
+          
+          {/* LOGO */}
           <Image
-            src="/kiddiekid.png"
-            alt="Background"
-            fill
-            className="object-cover"
+            src="/hexalogo2.png"
+            alt="Hexaprime Logo"
+            width={160}
+            height={50}
+            className="object-contain cursor-pointer"
           />
 
-          {/* Header overlay */}
-          <nav className="relative flex justify-between items-center max-w-7xl mx-auto px-8 py-3 bg-gray-900/50 backdrop-blur-md">
-            
-            {/* LOGO */}
-            <Image
-              src="/hexalogo2.png"
-              alt="Hexaprime Logo"
-              width={160}
-              height={50}
-              className="object-contain cursor-pointer"
-            />
+          {/* MENU ITEMS */}
+          <ul className="hidden md:flex items-center text-white/90 font-medium">
+            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+              Home <span className="mx-1">|</span>
+            </li>
+            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+              Social Responsibility <span className="mx-1">|</span>
+            </li>
+            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
+              About Us
+            </li>
+            <li className="ml-6 px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
+              Sign up
+            </li>
+          </ul>
 
-            {/* Menu Items */}
-            <ul className="hidden md:flex items-center text-white/90 font-medium">
-              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-                Home <span className="mx-1">|</span>
-              </li>
-              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-                Social Responsibility <span className="mx-1">|</span>
-              </li>
-              <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-                About Us
-              </li>
-              <li className="ml-6 px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-                Sign up
-              </li>
-            </ul>
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden text-white cursor-pointer text-2xl">
+            ☰
+          </div>
 
-            {/* Mobile Menu Icon */}
-            <div className="md:hidden text-white cursor-pointer text-2xl">
-              ☰
-            </div>
-
-          </nav>
-        </div>
+        </nav>
       </header>
 
       {/* Hero Section */}
       <section className="relative h-screen">
         <Image src="/kiddiekid.png" alt="Hero" fill className="object-cover" />
+        
+        {/* Overlay content */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
+          <Image
+            src="/hexalogo2.png"
+            alt="Hexaprime Logo Overlay"
+            width={180}
+            height={60}
+            className="mb-6 opacity-90"
+          />
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
@@ -99,7 +96,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
