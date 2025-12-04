@@ -38,41 +38,37 @@ export default function Home() {
     <main className="bg-gray-900 text-white min-h-screen">
 
       {/* Header */}
-      <header className="w-full fixed top-0 left-0 z-50 bg-gray-900/40 backdrop-blur-md border-b border-gray-700">
-        <nav className="max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
-          
-          {/* LOGO */}
+      <header className="w-full fixed top-0 left-0 z-50 bg-gray-900/90 backdrop-blur-md shadow-md">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
+
+        {/* LOGO */}
+        <div className="flex-shrink-0">
           <Image
             src="/hexalogo2.png"
             alt="Hexaprime Logo"
             width={160}
             height={50}
-            className="object-contain cursor-pointer"
+            className="block object-contain cursor-pointer"
           />
+        </div>
 
-          {/* MENU ITEMS */}
-          <ul className="hidden md:flex items-center text-white/90 font-medium">
-            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-              Home <span className="mx-1">|</span>
-            </li>
-            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-              Social Responsibility <span className="mx-1">|</span>
-            </li>
-            <li className="mr-4 hover:text-purple-400 cursor-pointer transition">
-              About Us
-            </li>
-            <li className="ml-6 px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-              Sign up
-            </li>
-          </ul>
+        {/* Menu Items */}
+        <ul className="hidden md:flex items-center text-white/90 font-medium ml-8 space-x-6">
+          <li className="hover:text-purple-400 cursor-pointer transition">Home</li>
+          <li className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</li>
+          <li className="hover:text-purple-400 cursor-pointer transition">About Us</li>
+          <li className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
+            Sign up
+          </li>
+        </ul>
 
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden text-white cursor-pointer text-2xl">
-            ☰
-          </div>
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-white cursor-pointer text-2xl">
+          ☰
+        </div>
 
-        </nav>
-      </header>
+      </nav>
+    </header>
 
       {/* Hero Section */}
       <section className="relative h-screen">
