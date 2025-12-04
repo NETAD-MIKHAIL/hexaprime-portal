@@ -42,7 +42,7 @@ export default function Home() {
         {/* Background image overlay */}
         <div className="absolute inset-0 -z-10">
           {/* Semi-transparent overlay */}
-          <div className="absolute inset-0 bg-gray-900/0 backdrop-blur-md"></div>
+      
         </div>
 
         <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
