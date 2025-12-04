@@ -36,6 +36,31 @@ export default function Home() {
 
   return (
     <main className="bg-gray-900 text-white min-h-screen">
+
+      {/* Navigation Bar */}
+      <header className="w-full bg-gray-900/80 backdrop-blur-md fixed top-0 left-0 z-50 border-b border-gray-700">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+          <h1 className="text-2xl font-bold text-purple-500">Hexaprime</h1>
+
+          <ul className="hidden md:flex items-center space-x-8 text-white/90 font-medium">
+            <li className="hover:text-purple-400 cursor-pointer transition">Home</li>
+            <li className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</li>
+            <li className="hover:text-purple-400 cursor-pointer transition">About Us</li>
+            <li className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer">
+              Sign up
+            </li>
+          </ul>
+
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden text-white cursor-pointer">
+            ☰
+          </div>
+        </nav>
+      </header>
+
+      {/* Offset for fixed navbar */}
+      <div className="pt-20"></div>
+
       {/* Hero Section */}
       <section className="relative h-screen">
         <Image src="/kiddiekid.png" alt="Hero" fill className="object-cover" />
