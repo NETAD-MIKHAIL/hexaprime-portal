@@ -42,7 +42,7 @@ export default function Home() {
         {/* Background image overlay */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/kiddiekid.png"
+            src="/kiddiekid1.png"
             alt="Background"
             fill
             className="object-cover"
