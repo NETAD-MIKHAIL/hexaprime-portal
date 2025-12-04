@@ -41,12 +41,7 @@ export default function Home() {
       <header className="w-full fixed top-0 left-0 z-50 border-0 shadow-none">
         {/* Background image overlay */}
         <div className="absolute inset-0 -z-10">
-          <Image
-            src="/kiddiekid1.png"
-            alt="Background"
-            fill
-            className="object-cover"
-          />
+       
           {/* Semi-transparent overlay */}
           <div className="absolute inset-0 bg-gray-900/0 backdrop-blur-md"></div>
         </div>
