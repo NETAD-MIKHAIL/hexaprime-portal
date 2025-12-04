@@ -71,11 +71,6 @@ export default function Home() {
               <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
             
             </li>
-            <li>
-              <span className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-                Sign up
-              </span>
-            </li>
           </ul>
 
           {/* Mobile Menu Icon */}
