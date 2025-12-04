@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Hexaprime Inc. charity sweepstakes landing page supporting communities affected by disasters.",
   icons: {
-    icon: "/hexalogo1.png", // <-- favicon
+    icon: "/hexalogo1.ico", // <-- favicon
   },
 };
 
