@@ -45,8 +45,8 @@ export default function Home() {
           <Image
             src="/hexalogo.png"   // your logo file
             alt="Hexaprime Logo"
-            width={160}           // adjust size if needed
-            height={50}
+            width={80}           // adjust size if needed
+            height={20}
             className="object-contain cursor-pointer"
           />
 
