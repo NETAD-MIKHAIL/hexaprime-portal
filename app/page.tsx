@@ -91,6 +91,14 @@ export default function Home() {
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
 
+          <Image
+              src="/hexalogo2.png"
+              alt="Hexaprime Logo"
+              width={isScrolled ? 120 : 170}
+              height={isScrolled ? 40 : 60}
+              className="block object-contain cursor-pointer transition-all duration-300"
+            />
+          
           <p className="mt-4 max-w-4xl text-white/90">
 “At Hexaprime Inc., we believe that hope should never be out of reach.  We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
           </p>
