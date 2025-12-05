@@ -1,5 +1,6 @@
 "use client";
 
+import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
@@ -11,6 +12,11 @@ export default function Home() {
 
   // Navbar scroll state
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // choose weights you need
+});
 
   useEffect(() => {
     const duration = 2000;
