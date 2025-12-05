@@ -92,8 +92,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 max-w-2xl text-white/90">
-            At Hexaprime Inc., we believe that hope should never be out of reach.
-            We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities.
+“At Hexaprime Inc., we believe that hope should never be out of reach.  We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
           </p>
 
           {/* Interactive Button */}
