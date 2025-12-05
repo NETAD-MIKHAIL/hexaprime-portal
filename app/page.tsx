@@ -84,19 +84,18 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen">
+      <section className="relative w-full h-screen">
         {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/kiddiekid.png"
-            alt="Hexaprime Background"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+        <Image
+          src="/kiddiekid.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+      
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 h-full">
