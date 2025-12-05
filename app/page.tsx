@@ -1,23 +1,28 @@
 "use client";
 
+import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
 export default function Home() {
-  // Animated counters
   const [communities, setCommunities] = useState(0);
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
+
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const duration = 2000;
     const steps = 100;
     const intervalTime = duration / steps;
 
-    let c = 0,
-      f = 0,
-      v = 0;
+    let c = 0, f = 0, v = 0;
 
     const interval = setInterval(() => {
       c += 150 / steps;
@@ -34,69 +39,55 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <main className="bg-gray-900 text-white min-h-screen">
-
+    <main className={`${roboto.className} bg-gray-900 text-white min-h-screen`}>
       {/* Header */}
-      <header className="w-full fixed top-0 left-0 z-50 border-0 shadow-none">
-        {/* Background image overlay */}
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/kiddiekid.png"
-            alt="Background"
-            fill
-            className="object-cover"
-          />
-          {/* Semi-transparent overlay */}
-          <div className="absolute inset-0 bg-gray-900/50 backdrop-blur-md"></div>
-        </div>
-
-        <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
-          {/* LOGO */}
-          <div className="flex-shrink-0">
+      <header
+        className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+          isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-6"
+        }`}
+      >
+        <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 transition-all duration-300">
+          <div className="flex-shrink-0 transition-all duration-300">
             <Image
               src="/hexalogo2.png"
               alt="Hexaprime Logo"
-              width={160}
-              height={50}
-              className="block object-contain cursor-pointer"
+              width={isScrolled ? 120 : 170}
+              height={isScrolled ? 40 : 60}
+              className="block object-contain cursor-pointer transition-all duration-300"
             />
           </div>
 
-          {/* Menu Items */}
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
               <span className="hover:text-purple-400 cursor-pointer transition">Home</span>
-              <span className="mx-2">|</span>
             </li>
-            <li className="flex items-center">
+            <li className="flex items-center ml-6">
               <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
-              <span className="mx-2">|</span>
             </li>
-            <li className="flex items-center">
+            <li className="flex items-center ml-6">
               <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
-              <span className="mx-2">|</span>
-            </li>
-            <li>
-              <span className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-                Sign up
-              </span>
             </li>
           </ul>
 
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden text-white cursor-pointer text-2xl">
-            ☰
-          </div>
+          <div className="md:hidden text-white cursor-pointer text-2xl">☰</div>
         </nav>
       </header>
 
       {/* Hero Section */}
       <section className="relative h-screen">
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
           
-          <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
 
@@ -120,26 +111,25 @@ export default function Home() {
             Access Portal
             <span className="text-xl">→</span>
           </a>
-
         </div>
       </section>
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
-        <h2 className="text-3xl font-bold text-purple-600 mb-6">Our Mission</h2>
+        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">Our Mission</h2>
         <p className="max-w-3xl mb-4">
-          To provide rapid, effective, and compassionate relief for communities facing disasters...
+         To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive.
         </p>
         <p className="max-w-3xl">
-          Your contribution supports emergency response, disaster relief, and long-term recovery programs...
+          Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
         </p>
       </section>
 
-      {/* Widgets Section */}
+      {/* Widgets */}
       <section className="py-16 px-4 md:px-16 bg-gray-900">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Communities */}
+
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
             <div className="p-4 bg-purple-600 rounded-full">
               <UsersIcon className="w-8 h-8 text-white" />
@@ -151,7 +141,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Funds */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
             <div className="p-4 bg-purple-600 rounded-full">
               <CurrencyDollarIcon className="w-8 h-8 text-white" />
@@ -163,7 +152,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Volunteers */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
             <div className="p-4 bg-purple-600 rounded-full">
               <HandRaisedIcon className="w-8 h-8 text-white" />
@@ -174,10 +162,11 @@ export default function Home() {
               <p className="mt-1 text-white/70 text-sm">Working with local partners to maximize impact.</p>
             </div>
           </div>
+
         </div>
       </section>
 
-      {/* Pillars Section */}
+      {/* Pillars */}
       <section className="py-16 px-4 md:px-16 bg-gray-800">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Our Pillars of Responsibility</h2>
         <div className="grid md:grid-cols-3 gap-8">
