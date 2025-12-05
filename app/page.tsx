@@ -84,42 +84,50 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen">
-        <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
-          
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-            Sharing Care, Beyond the line with Hexaprime!
-          </h1>
+<section className="relative h-screen">
+  <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
+    
+    <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+      Sharing Care, Beyond the line with Hexaprime!
+    </h1>
 
-          <Image
-              src="/hexalogo2.png"
-              alt="Hexaprime Logo"
-              width={isScrolled ? 120 : 170}
-              height={isScrolled ? 40 : 60}
-              className="block object-contain cursor-pointer transition-all duration-300"
-            />
-          
-          <p className="mt-4 max-w-4xl text-white/90">
-“At Hexaprime Inc., we believe that hope should never be out of reach.  We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
-          </p>
+    {/* Logo Image */}
+    <div className="mt-6">
+      <Image
+        src="/hexalogo2.png"
+        alt="Hexaprime Logo"
+        width={isScrolled ? 120 : 170}
+        height={isScrolled ? 40 : 60}
+        className="block object-contain cursor-pointer transition-all duration-300"
+        priority
+      />
+    </div>
+    
+    <p className="mt-6 max-w-4xl text-white/90">
+      “At Hexaprime Inc., we believe that hope should never be out of reach. 
+      We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
+      Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
+    </p>
 
-          {/* Interactive Button */}
-          <a
-            href="/portal"
-            className="
-              mt-8 inline-flex items-center gap-2 
-              bg-purple-600 hover:bg-purple-700 
-              text-white font-semibold 
-              px-6 py-3 rounded-xl 
-              transition-all duration-300 
-              hover:scale-105 hover:shadow-lg
-            "
-          >
-            Access Portal
-            <span className="text-xl">→</span>
-          </a>
-        </div>
-      </section>
+    {/* Interactive Button */}
+    <a
+      href="/portal"
+      className="
+        mt-8 inline-flex items-center gap-2 
+        bg-purple-600 hover:bg-purple-700 
+        text-white font-semibold 
+        px-6 py-3 rounded-xl 
+        transition-all duration-300 
+        hover:scale-105 hover:shadow-lg
+      "
+    >
+      Access Portal
+      <span className="text-xl">→</span>
+    </a>
+
+  </div>
+</section>
+
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
