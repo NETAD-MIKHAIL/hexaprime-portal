@@ -93,19 +93,36 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen">
-        {/* Remove background image since header already covers */}
-        {/* Overlay content */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
+          
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
+
           <p className="mt-4 max-w-2xl text-white/90">
             At Hexaprime Inc., we believe that hope should never be out of reach.
             We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities.
           </p>
+
+          {/* Interactive Button */}
+          <a
+            href="/portal"
+            className="
+              mt-8 inline-flex items-center gap-2 
+              bg-purple-600 hover:bg-purple-700 
+              text-white font-semibold 
+              px-6 py-3 rounded-xl 
+              transition-all duration-300 
+              hover:scale-105 hover:shadow-lg
+            "
+          >
+            Access Portal
+            <span className="text-xl">→</span>
+          </a>
+
         </div>
       </section>
-
 
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
