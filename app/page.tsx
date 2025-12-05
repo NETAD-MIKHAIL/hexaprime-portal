@@ -109,7 +109,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 h-full">
+        <div className="relative z-10 flex flex-col justify-center items-center text-center px-5 h-full">
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
