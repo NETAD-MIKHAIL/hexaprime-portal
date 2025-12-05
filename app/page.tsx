@@ -5,6 +5,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
+  const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // choose weights you need
+});
+
 export default function Home() {
   const [communities, setCommunities] = useState(0);
   const [funds, setFunds] = useState(0);
@@ -12,11 +17,6 @@ export default function Home() {
 
   // Navbar scroll state
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"], // choose weights you need
-});
 
   useEffect(() => {
     const duration = 2000;
@@ -51,7 +51,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-gray-900 text-white min-h-screen">
+    <main className={`${roboto.className} bg-gray-900 text-white min-h-screen`}>
       {/* Header */}
       <header
         className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
