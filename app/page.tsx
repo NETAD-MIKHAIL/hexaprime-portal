@@ -7,7 +7,7 @@ import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["200", "500", "700"],
 });
 
 export default function Home() {
