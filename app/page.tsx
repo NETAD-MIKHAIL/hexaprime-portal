@@ -55,7 +55,7 @@ export default function Home() {
           isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-6"
         }`}
       >
-        <nav className="relative max-w-9xl mx-auto flex justify-between items-center px-8 transition-all duration-300">
+        <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 transition-all duration-300">
           <div className="flex-shrink-0 transition-all duration-300">
             <Image
               src="/hexalogo2.png"
