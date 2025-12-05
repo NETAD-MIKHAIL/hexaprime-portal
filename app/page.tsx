@@ -79,7 +79,7 @@ export default function Home() {
               <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
             </li>
             <li className="flex items-center ml-6">
-              <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
+              <span className="hover:text-purple-400 cursor-pointer transition">Contact Us</span>
             </li>
           </ul>
 
