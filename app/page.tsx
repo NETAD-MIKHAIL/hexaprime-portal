@@ -101,7 +101,7 @@ export default function Home() {
       {/* ...rest of your sections unchanged */}
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
-        <h2 className="text-3xl font-bold text-purple-600 mb-6">Our Mission</h2>
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 mb-6">Our Mission</h2>
         <p className="max-w-3xl mb-4">
          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive.
         </p>
