@@ -94,7 +94,7 @@ export default function Home() {
           {/* Logo Image */}
           <div className="mt-6">
             <Image
-              src="/hexalogo2.png"
+              src="/kiddiekid.png"
               alt="Hexaprime Logo"
               width={isScrolled ? 120 : 170}
               height={isScrolled ? 40 : 60}
