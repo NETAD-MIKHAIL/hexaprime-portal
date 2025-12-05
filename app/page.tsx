@@ -14,7 +14,6 @@ export default function Home() {
   const [communities, setCommunities] = useState(0);
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -49,7 +48,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`${roboto.className} bg-gray-900 text-white min-h-screen`}>
+    <main id="top" className={`${roboto.className} bg-gray-900 text-white min-h-screen`}>
       {/* Header */}
       <header
         className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
@@ -69,7 +68,12 @@ export default function Home() {
 
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
-              <span className="hover:text-purple-400 cursor-pointer transition">Home</span>
+              <span
+                className="hover:text-purple-400 cursor-pointer transition"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Home
+              </span>
             </li>
             <li className="flex items-center ml-6">
               <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
@@ -93,22 +97,22 @@ export default function Home() {
           className="object-cover w-full h-full"
           priority
         />
-      
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
-      
+
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 h-full">
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
-      
+
           <p className="mt-6 max-w-4xl text-white/90">
             “At Hexaprime Inc., we believe that hope should never be out of reach. 
             We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
             Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
           </p>
-      
+
           {/* Interactive Button */}
           <a
             href="/portal"
@@ -131,14 +135,14 @@ export default function Home() {
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
         <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">Our Mission</h2>
         <p className="max-w-3xl mb-4">
-         To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive.
+          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive.
         </p>
         <p className="max-w-3xl">
           Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
         </p>
       </section>
 
-      {/* Widgets */}
+      {/* Widgets Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-900">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -179,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pillars */}
+      {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Our Pillars of Responsibility</h2>
         <div className="grid md:grid-cols-3 gap-8">
