@@ -68,15 +68,15 @@ export default function Home() {
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
               <span className="hover:text-purple-400 cursor-pointer transition">Home</span>
-              <span className="mx-2"></span>
+              <span className="mx-2"> </span>
             </li>
             <li className="flex items-center">
               <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
-              <span className="mx-2"></span>
+              <span className="mx-2"> </span>
             </li>
             <li className="flex items-center">
               <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
-              <span className="mx-2"></span>
+              <span className="mx-2"> </span>
             </li>
           </ul>
 
