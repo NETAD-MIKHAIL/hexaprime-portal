@@ -65,7 +65,7 @@ export default function Home() {
               className="block object-contain cursor-pointer transition-all duration-300"
             />
           </div>
-
+      
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
               <span
@@ -76,13 +76,20 @@ export default function Home() {
               </span>
             </li>
             <li className="flex items-center ml-6">
-              <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
+              <span className="hover:text-purple-400 cursor-pointer transition">
+                Social Responsibility
+              </span>
             </li>
             <li className="flex items-center ml-6">
-              <span className="hover:text-purple-400 cursor-pointer transition">Contact Us</span>
+              <a
+                href="/contact_us"
+                className="hover:text-purple-400 cursor-pointer transition"
+              >
+                Contact Us
+              </a>
             </li>
           </ul>
-
+      
           <div className="md:hidden text-white cursor-pointer text-2xl">☰</div>
         </nav>
       </header>
