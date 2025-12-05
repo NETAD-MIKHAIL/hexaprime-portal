@@ -141,10 +141,10 @@ export default function Home() {
       {/* Mission Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
         <h2 className="text-center text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">Our Mission</h2>
-        <p className="text-center max-w-5xl mb-4">
+        <p className="justify-center text-center max-w-5xl mb-4">
           To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive.
         </p>
-        <p className="text-center max-w-5xl">
+        <p className="justify-center text-center max-w-5xl">
           Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
         </p>
       </section>
