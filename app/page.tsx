@@ -139,7 +139,13 @@ export default function Home() {
 {/* Together, We Make Hope Happen */}
 <section
   className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 text-white bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/image_2.jpg')" }}
+  <Image
+        src="/kiddiekid.png"
+        alt="Hexaprime Background"
+        fill
+        className="object-cover w-full h-full"
+        priority
+      />
 >
   <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
     <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
