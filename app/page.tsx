@@ -138,24 +138,24 @@ export default function Home() {
 
 {/* Together, We Make Hope Happen */}
 <section
-  className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 text-white bg-cover bg-center bg-no-repeat"
+  className="relative w-full min-h-screen flex items-center justify-center"
   <Image
-        src="/kiddiekid.png"
+        src="/image_2.png"
         alt="Hexaprime Background"
         fill
         className="object-cover w-full h-full"
         priority
       />
->
+  >
   <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
     <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
       Together, We Make Hope Happen
     </h2>
-    <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-      Join our mission today. Participate, donate, and be a beacon of support for those in need
-    </p>
-  </div>
-</section>
+      <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+        Join our mission today. Participate, donate, and be a beacon of support for those in need
+      </p>
+    </div>
+  </section>
 
       
       {/* Widgets Section */}
