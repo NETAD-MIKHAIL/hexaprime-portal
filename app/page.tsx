@@ -78,7 +78,7 @@ export default function Home() {
           
             <li className="flex items-center ml-3">
               <span
-                className="cursor-pointer transition px-3 py-2 rounded-md hover:bg-blue-600 hover:text-white hover:shadow-md"
+                className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white"
               >
                 Social Responsibility
               </span>
