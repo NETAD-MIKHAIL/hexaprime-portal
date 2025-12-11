@@ -48,7 +48,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main id="top" className={`${roboto.className} bg-gray-900 text-white min-h-screen`}>
+    <main id="top" className={`${roboto.className} bg-gray-800 text-white min-h-screen`}>
       {/* Header */}
       <header
         className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
