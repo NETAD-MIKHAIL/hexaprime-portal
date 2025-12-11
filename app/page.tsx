@@ -118,7 +118,7 @@ export default function Home() {
           Sharing Care, Beyond the line with Hexaprime!
         </h1>
     
-        <p className="mt-6 text-white/90 text-base sm:text-lg md:text-xl leading-relaxed">
+        <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
           “At Hexaprime Inc., we believe that hope should never be out of reach. 
           We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
           Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
