@@ -4,23 +4,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
-<<<<<<< HEAD
-=======
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["200", "500", "700"],
-});
-
->>>>>>> a82d9c7660e91c837b307f2537036b374a9dda3b
 export default function Home() {
   // Animated counters
   const [communities, setCommunities] = useState(0);
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
-<<<<<<< HEAD
-=======
-  const [isScrolled, setIsScrolled] = useState(false);
->>>>>>> a82d9c7660e91c837b307f2537036b374a9dda3b
 
   useEffect(() => {
     const duration = 2000;
@@ -47,7 +35,6 @@ export default function Home() {
   }, []);
 
   return (
-<<<<<<< HEAD
     <main className="bg-gray-900 text-white min-h-screen">
 
       {/* Header */}
@@ -67,17 +54,6 @@ export default function Home() {
         <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
           {/* LOGO */}
           <div className="flex-shrink-0">
-=======
-    <main id="top" className={`${roboto.className} bg-gray-800 text-white min-h-screen`}>
-      {/* Header */}
-      <header
-        className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-6"
-        }`}
-      >
-        <nav className="relative max-w-8xl mx-auto flex justify-between items-center px-8 transition-all duration-300">
-          <div className="flex-shrink-0 transition-all duration-300">
->>>>>>> a82d9c7660e91c837b307f2537036b374a9dda3b
             <Image
               src="/hexalogo2.png"
               alt="Hexaprime Logo"
@@ -86,7 +62,6 @@ export default function Home() {
               className="block object-contain cursor-pointer"
             />
           </div>
-<<<<<<< HEAD
 
           {/* Menu Items */}
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
@@ -118,7 +93,6 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen">
-        {/* Remove background image since header already covers */}
         {/* Overlay content */}
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600">
@@ -130,88 +104,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-=======
-      
-          <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
-            <li className="flex items-center">
-              <span
-                className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              >
-                Home
-              </span>
-            </li>
-          
-            <li className="flex items-center ml-3">
-              <span
-                className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white"
-              >
-                Social Responsibility
-              </span>
-            </li>
-          
-            <li className="flex items-center ml-3">
-              <a
-                href="/contact_us"
-                className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-          
-          <div className="md:hidden text-white cursor-pointer text-2xl">☰</div>
-        </nav>
-      </header>
-
-     {/* Hero Section */}
-    <section className="relative w-full min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <Image
-        src="/kiddiekid.png"
-        alt="Hexaprime Background"
-        fill
-        className="object-cover w-full h-full"
-        priority
-      />
-    
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
-    
-      {/* Content Overlay */}
-      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
-        <h1 className="relative z-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-          Sharing Care, Beyond the line with Hexaprime!
-        </h1>
-    
-        <p className="mt-6 text-white/90 text-base sm:text-lg md:text-xl leading-relaxed">
-          “At Hexaprime Inc., we believe that hope should never be out of reach. 
-          We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
-          Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
-        </p>
-    
-        {/* Interactive Button */}
-        <a
-          href="/portal"
-          className="
-            mt-8 inline-flex items-center gap-2 
-            bg-purple-600 hover:bg-purple-700 
-            text-white font-semibold 
-            px-6 py-3 rounded-xl 
-            transition-all duration-300 
-            hover:scale-105 hover:shadow-lg
-          "
-        >
-          Access Portal
-          <span className="text-xl">→</span>
-        </a>
-      </div>
-    </section>
->>>>>>> a82d9c7660e91c837b307f2537036b374a9dda3b
-
 
       {/* Mission Section */}
-<<<<<<< HEAD
       <section className="py-16 px-4 md:px-16 bg-gray-800 text-white">
         <h2 className="text-3xl font-bold text-purple-600 mb-6">Our Mission</h2>
         <p className="max-w-3xl mb-4">
@@ -219,74 +113,7 @@ export default function Home() {
         </p>
         <p className="max-w-3xl">
           Your contribution supports emergency response, disaster relief, and long-term recovery programs...
-=======
-      <section className="flex flex-col items-center justify-center text-center min-h-screen py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">Our Mission</h2>
-        <p className="mt-5 max-w-6xl ">
-          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
->>>>>>> a82d9c7660e91c837b307f2537036b374a9dda3b
         </p>
-      </section>
-
-      {/* Widgets Section */}
-      <section className="py-16 px-4 md:px-16 bg-gray-900">
-        <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Communities */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <UsersIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Communities Supported</h3>
-              <p className="text-3xl font-bold text-purple-500">{communities}+</p>
-              <p className="mt-1 text-white/70 text-sm">Across multiple regions facing natural disasters.</p>
-            </div>
-          </div>
-
-          {/* Funds */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <CurrencyDollarIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Funds Distributed</h3>
-              <p className="text-3xl font-bold text-purple-500">${(funds / 1000).toLocaleString()}K</p>
-              <p className="mt-1 text-white/70 text-sm">Allocated directly to emergency relief and recovery programs.</p>
-            </div>
-          </div>
-
-          {/* Volunteers */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <HandRaisedIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Volunteers Engaged</h3>
-              <p className="text-3xl font-bold text-purple-500">{volunteers}+</p>
-              <p className="mt-1 text-white/70 text-sm">Working with local partners to maximize impact.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pillars Section */}
-      <section className="py-16 px-4 md:px-16 bg-gray-800">
-        <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Our Pillars of Responsibility</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
-            <p>We channel funds directly to communities facing natural disasters...</p>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Community Rebuilding Projects</h3>
-            <p>Supporting long-term recovery efforts such as rebuilding homes and infrastructure...</p>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Partnership & Collaboration</h3>
-            <p>We partner with local organizations, volunteers, and agencies to reach those in need...</p>
-          </div>
-        </div>
       </section>
 
       {/* Footer */}
