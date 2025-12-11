@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { UsersIcon, CurrencyDollarIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
@@ -52,43 +53,45 @@ export default function Home() {
         </div>
 
         <nav className="relative max-w-7xl mx-auto flex justify-between items-center px-8 py-3">
-          {/* LOGO */}
-          <div className="flex-shrink-0">
-            <Image
-              src="/hexalogo2.png"
-              alt="Hexaprime Logo"
-              width={160}
-              height={50}
-              className="block object-contain cursor-pointer"
-            />
-          </div>
-
-          {/* Menu Items */}
-          <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
-            <li className="flex items-center">
+        {/* LOGO */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/hexalogo2.png"
+            alt="Hexaprime Logo"
+            width={160}
+            height={50}
+            className="block object-contain cursor-pointer"
+          />
+        </div>
+      
+        {/* Menu Items */}
+        <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
+          <li className="flex items-center">
+            <Link href="/">
               <span className="hover:text-purple-400 cursor-pointer transition">Home</span>
-              <span className="mx-2">|</span>
-            </li>
-            <li className="flex items-center">
-              <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
-              <span className="mx-2">|</span>
-            </li>
-            <li className="flex items-center">
-              <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
-              <span className="mx-2">|</span>
-            </li>
-            <li>
-              <span className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
-                Sign up
-              </span>
-            </li>
-          </ul>
-
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden text-white cursor-pointer text-2xl">
-            ☰
-          </div>
-        </nav>
+            </Link>
+            <span className="mx-2">|</span>
+          </li>
+          <li className="flex items-center">
+            <span className="hover:text-purple-400 cursor-pointer transition">Social Responsibility</span>
+            <span className="mx-2">|</span>
+          </li>
+          <li className="flex items-center">
+            <span className="hover:text-purple-400 cursor-pointer transition">About Us</span>
+            <span className="mx-2">|</span>
+          </li>
+          <li>
+            <span className="px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition cursor-pointer shadow-md">
+              Sign up
+            </span>
+          </li>
+        </ul>
+      
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-white cursor-pointer text-2xl">
+          ☰
+        </div>
+      </nav>
       </header>
 
       {/* Hero Section */}
