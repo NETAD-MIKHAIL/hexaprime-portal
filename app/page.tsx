@@ -128,12 +128,20 @@ export default function Home() {
 
       {/* Mission Section */}
       <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">Together, We Make Hope Happen</h2>
+        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          Join our mission today. Participate, donate, and be a beacon of support for those in need
+        </p>
+      </section>
+      
+      {/* Together, We Make Hope Happen */}
+      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
         <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">Our Mission</h2>
         <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
           To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
         </p>
       </section>
-
+      
       {/* Widgets Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-900">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
