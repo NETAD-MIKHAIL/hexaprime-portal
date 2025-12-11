@@ -123,22 +123,6 @@ export default function Home() {
           We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
           Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
         </p>
-    
-        {/* Interactive Button */}
-        <a
-          href="/portal"
-          className="
-            mt-8 inline-flex items-center gap-2 
-            bg-purple-600 hover:bg-purple-700 
-            text-white font-semibold 
-            px-6 py-3 rounded-xl 
-            transition-all duration-300 
-            hover:scale-105 hover:shadow-lg
-          "
-        >
-          Access Portal
-          <span className="text-xl">→</span>
-        </a>
       </div>
     </section>
 
