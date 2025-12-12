@@ -147,7 +147,7 @@ export default function Home() {
         priority
       />
       <div className="absolute inset-0 bg-black/50"></div>
-  >
+  
   <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
     <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
       Together, We Make Hope Happen
