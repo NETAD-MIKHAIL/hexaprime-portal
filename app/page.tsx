@@ -98,67 +98,69 @@ export default function Home() {
         </nav>
       </header>
 
-     {/* Hero Section */}
-    <section className="relative w-full min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <Image
-        src="/kiddiekid.png"
-        alt="Hexaprime Background"
-        fill
-        className="object-cover w-full h-full"
-        priority
-      />
-    
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
-    
-      {/* Content Overlay */}
-      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
-        <h1 className="relative z-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-          Sharing Care, Beyond the line with Hexaprime!
-        </h1>
-    
-        <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-          “At Hexaprime Inc., we believe that hope should never be out of reach. 
-          We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
-          Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
-        </p>
-      </div>
-    </section>
-
-{/* Mission Section */}
-<section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-  <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-    Our Mission
-  </h2>
-  <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-    To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
-  </p>
-</section>
-
-{/* Together, We Make Hope Happen */}
-<section
-  className="relative w-full min-h-screen flex items-center justify-center"
-  <Image
-        src="/image_2.png"
-        alt="Hexaprime Background"
-        fill
-        className="object-cover w-full h-full"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/50"></div>
-  
-  <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
-    <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-      Together, We Make Hope Happen
-    </h2>
-      <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-        Join our mission today. Participate, donate, and be a beacon of support for those in need
-      </p>
-    </div>
-  </section>
-
+      {/* Hero Section */}
+      <section className="relative w-full min-h-screen flex items-center justify-center">
+        {/* Background Image */}
+        <Image
+          src="/kiddiekid.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
       
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+      
+        {/* Content Overlay */}
+        <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
+          <h1 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+            Sharing Care, Beyond the line with Hexaprime!
+          </h1>
+      
+          <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            “At Hexaprime Inc., we believe that hope should never be out of reach. 
+            We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
+            Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
+          </p>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+          Our Mission
+        </h2>
+        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
+        </p>
+      </section>
+
+      {/* Together, We Make Hope Happen */}
+      <section className="relative w-full min-h-screen flex items-center justify-center">
+        {/* Background Image */}
+        <Image
+          src="/image_2.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+    
+        {/* Content Overlay */}
+        <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
+          <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+            Together, We Make Hope Happen
+          </h2>
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            Join our mission today. Participate, donate, and be a beacon of support for those in need
+          </p>
+        </div>
+      </section>
+
       {/* Widgets Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-900">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
