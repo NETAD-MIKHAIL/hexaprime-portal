@@ -65,7 +65,6 @@ export default function Home() {
               className="block object-contain cursor-pointer transition-all duration-300"
             />
           </div>
-      
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
               <span
@@ -75,15 +74,11 @@ export default function Home() {
                 Home
               </span>
             </li>
-          
             <li className="flex items-center ml-3">
-              <span
-                className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white"
-              >
+              <span className="cursor-pointer transition px-3 py-2 rounded-lg hover:bg-gray-700 hover:text-white">
                 Social Responsibility
               </span>
             </li>
-          
             <li className="flex items-center ml-3">
               <a
                 href="/contact_us"
@@ -93,7 +88,6 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          
           <div className="md:hidden text-white cursor-pointer text-2xl">☰</div>
         </nav>
       </header>
@@ -140,7 +134,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center py-5 px-4 md:px-16">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
           <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Together, We Make Hope Happen
           </h2>
