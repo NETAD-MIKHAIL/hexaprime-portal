@@ -94,14 +94,22 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative w-full min-h-screen flex items-center justify-center">
-        <Image
-          src="/kiddiekid.png"
-          alt="Hexaprime Background"
-          fill
-          className="object-cover w-full h-full"
-          priority
-        />
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
+      
+        {/* Content */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Sharing Care, Beyond the line with Hexaprime!
