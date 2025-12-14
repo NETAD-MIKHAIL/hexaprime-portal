@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.2 } // triggers when 20% of section is visible
