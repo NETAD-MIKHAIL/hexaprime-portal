@@ -205,10 +205,7 @@ export default function Home() {
     </p>
   </div>
 </section>
-
-
-
-      
+    
      {/* new section*/}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
