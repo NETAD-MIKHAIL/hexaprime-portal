@@ -228,7 +228,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 px-4 md:px-16 bg-black text-center text-white">
-        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+        <p className="max-w-7xl mt-6 mx-auto text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light text-center">
           © 2025 Hexaprime Inc. All Rights Reserved.
         </p>
       </footer>
