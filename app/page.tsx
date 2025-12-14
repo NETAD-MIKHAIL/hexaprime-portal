@@ -178,7 +178,7 @@ export default function Home() {
       
      {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-black/50">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-center mb-12">Our Pillars of Responsibility</h2>
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">Our Pillars of Responsibility</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
