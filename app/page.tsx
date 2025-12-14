@@ -151,45 +151,35 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* Widgets Section */}
-      <section className="py-16 px-4 md:px-16 bg-gray-900">
-        <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Hexaprime Highlights</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <UsersIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Communities Supported</h3>
-              <p className="text-3xl font-bold text-purple-500">{communities}+</p>
-              <p className="mt-1 text-white/70 text-sm">Across multiple regions facing natural disasters.</p>
-            </div>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <CurrencyDollarIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Funds Distributed</h3>
-              <p className="text-3xl font-bold text-purple-500">${(funds / 1000).toLocaleString()}K</p>
-              <p className="mt-1 text-white/70 text-sm">Allocated directly to emergency relief and recovery programs.</p>
-            </div>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 flex items-center gap-4">
-            <div className="p-4 bg-purple-600 rounded-full">
-              <HandRaisedIcon className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-1">Volunteers Engaged</h3>
-              <p className="text-3xl font-bold text-purple-500">{volunteers}+</p>
-              <p className="mt-1 text-white/70 text-sm">Working with local partners to maximize impact.</p>
-            </div>
-          </div>
-        </div>
+      
+       {/* Committed to Community Resilience */}
+      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+         Committed to Community Resilience
+        </h2>
+        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
+        </p>
       </section>
 
-      {/* Pillars Section */}
+      {/* Committed to Community Resilience_2 */}
+      <section className="relative w-full min-h-screen flex items-center justify-center">
+        <Image
+          src="/image_2.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            Hexaprime Inc. operates with the belief that giving should create lasting change. Our social responsibility practices reflect our dedication to ethical action, transparent operations, and community empowerment.
+          </p>
+        </div>
+      </section>
+      
+     {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-gray-800">
         <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Our Pillars of Responsibility</h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -205,6 +195,26 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-2">Partnership & Collaboration</h3>
             <p>We partner with local organizations, volunteers, and agencies to reach those in need...</p>
           </div>
+        </div>
+      </section>
+
+     {/* Together, We Make Hope Happen */}
+      <section className="relative w-full min-h-screen flex items-center justify-center">
+        <Image
+          src="/image_2.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
+          <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+            Together, We Make Hope Happen
+          </h2>
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            Join our mission today. Participate, donate, and be a beacon of support for those in need
+          </p>
         </div>
       </section>
 
