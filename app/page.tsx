@@ -178,22 +178,27 @@ export default function Home() {
       
      {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-black/50">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">Our Pillars of Responsibility</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
-            <p>We channel funds directly to communities facing natural disasters...</p>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Community Rebuilding Projects</h3>
-            <p>Supporting long-term recovery efforts such as rebuilding homes and infrastructure...</p>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Partnership & Collaboration</h3>
-            <p>We partner with local organizations, volunteers, and agencies to reach those in need...</p>
+        <div className="flex justify-center mb-12">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
+            Our Pillars of Responsibility
+          </h2>
+        </div>
+      <div className="grid md:grid-cols-3 gap-8">
+      <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
+          <p>We channel funds directly to communities facing natural disasters...</p>
+      </div>
+      <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h3 className="text-xl font-semibold mb-2">Community Rebuilding Projects</h3>
+        <p>Supporting long-term recovery efforts such as rebuilding homes and infrastructure...</p>
+      </div>
+      <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h3 className="text-xl font-semibold mb-2">Partnership & Collaboration</h3>
+          <p>We partner with local organizations, volunteers, and agencies to reach those in need...</p>
           </div>
         </div>
       </section>
+
 
      {/* new section*/}
       <section className="relative w-full min-h-screen flex items-center justify-center">
