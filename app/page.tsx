@@ -152,31 +152,7 @@ export default function Home() {
         </div>
       </section>
       
-       {/* Committed to Community Resilience */}
-      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
-         Committed to Community Resilience
-        </h2>
-       </section>
-
-      {/* Committed to Community Resilience_2 */}
-      <section className="relative w-full min-h-screen flex items-center justify-center">
-        <Image
-          src="/image_3.png"
-          alt="Hexaprime Background"
-          fill
-          className="object-cover w-full h-full"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
-          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-            Hexaprime Inc. operates with the belief that giving should create lasting change. Our social responsibility practices reflect our dedication to ethical action, transparent operations, and community empowerment.
-          </p>
-        </div>
-      </section>
-      
-     {/* Pillars Section */}
+      {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-black">
         <div className="flex justify-center mb-12">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
@@ -204,8 +180,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+       {/* Committed to Community Resilience */}
+      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
+         Committed to Community Resilience
+        </h2>
+       </section>
 
-
+      {/* Committed to Community Resilience_2 */}
+      <section className="relative w-full min-h-screen flex items-center justify-center">
+        <Image
+          src="/image_3.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            Hexaprime Inc. operates with the belief that giving should create lasting change. Our social responsibility practices reflect our dedication to ethical action, transparent operations, and community empowerment.
+          </p>
+        </div>
+      </section>
+      
      {/* new section*/}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
