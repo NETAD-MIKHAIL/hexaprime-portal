@@ -205,11 +205,20 @@ export default function Home() {
     </p>
   </div>
 </section>
-    
+      
+      {/* A Culture of Giving */}
+      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
+          A Culture of Giving
+        </h2>
+        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          Through innovation and compassion, we nurture a global community that stands together in times of crisis.
+        </p>
+      </section>
      {/* new section*/}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
-          src="/image_3.png"
+          src="/image_4.png"
           alt="Hexaprime Background"
           fill
           className="object-cover w-full h-full"
@@ -217,12 +226,6 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
-          <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-            Together, We Make Hope Happen
-          </h2>
-          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-            Join our mission today. Participate, donate, and be a beacon of support for those in need
-          </p>
         </div>
       </section>
 
