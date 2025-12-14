@@ -195,7 +195,7 @@ export default function Home() {
 
   {/* Text block positioned bottom-right */}
   <div className="absolute bottom-10 right-10 z-10 w-full max-w-3xl ml-auto text-right">
-    <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+    <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
       Committed to Community Resilience
     </h2>
     <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
