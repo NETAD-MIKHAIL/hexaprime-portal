@@ -157,15 +157,12 @@ export default function Home() {
         <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
          Committed to Community Resilience
         </h2>
-        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
-        </p>
-      </section>
+       </section>
 
       {/* Committed to Community Resilience_2 */}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
-          src="/image_2.png"
+          src="/image_3.png"
           alt="Hexaprime Background"
           fill
           className="object-cover w-full h-full"
@@ -201,7 +198,7 @@ export default function Home() {
      {/* Together, We Make Hope Happen */}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
-          src="/image_2.png"
+          src="/image_3.png"
           alt="Hexaprime Background"
           fill
           className="object-cover w-full h-full"
