@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -15,7 +15,7 @@ export default function Home() {
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+ 
 
   useEffect(() => {
     const duration = 2000;
