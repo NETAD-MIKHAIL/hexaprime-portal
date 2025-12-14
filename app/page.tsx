@@ -186,15 +186,21 @@ export default function Home() {
       <div className="grid md:grid-cols-3 gap-8">
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
-          <p>We channel funds directly to communities facing natural disasters...</p>
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            We channel funds directly to communities facing natural disasters...
+          </p>
       </div>
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold mb-2">Community Rebuilding Projects</h3>
-        <p>Supporting long-term recovery efforts such as rebuilding homes and infrastructure...</p>
+        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          Supporting long-term recovery efforts such as rebuilding homes and infrastructure...
+        </p>
       </div>
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold mb-2">Partnership & Collaboration</h3>
-          <p>We partner with local organizations, volunteers, and agencies to reach those in need...</p>
+          <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            We partner with local organizations, volunteers, and agencies to reach those in need...
+          </p>
           </div>
         </div>
       </section>
