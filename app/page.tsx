@@ -154,7 +154,7 @@ export default function Home() {
       
        {/* Committed to Community Resilience */}
       <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text text-transparent leading-snug sm:leading-tight">
          Committed to Community Resilience
         </h2>
        </section>
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-     {/* Together, We Make Hope Happen */}
+     {/* new section*/}
       <section className="relative w-full min-h-screen flex items-center justify-center">
         <Image
           src="/image_3.png"
