@@ -111,7 +111,7 @@ export default function Home() {
       
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
           <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
@@ -124,7 +124,7 @@ export default function Home() {
 
       {/* Mission Section */}
       <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
           Our Mission
         </h2>
         <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
@@ -143,7 +143,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-5 max-w-7xl">
-          <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+          <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Together, We Make Hope Happen
           </h2>
           <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
@@ -154,7 +154,7 @@ export default function Home() {
       
        {/* Committed to Community Resilience */}
       <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text text-transparent leading-snug sm:leading-tight">
+        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
          Committed to Community Resilience
         </h2>
        </section>
@@ -178,7 +178,7 @@ export default function Home() {
       
      {/* Pillars Section */}
       <section className="py-16 px-4 md:px-16 bg-black/50">
-        <h2 className="text-3xl font-bold text-purple-600 text-center mb-12">Our Pillars of Responsibility</h2>
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-center mb-12">Our Pillars of Responsibility</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Disaster Relief & Emergency Aid</h3>
