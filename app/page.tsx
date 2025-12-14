@@ -181,27 +181,30 @@ export default function Home() {
         </div>
       </section>
       
-{/* Committed to Community Resilience */}
-<section className="relative w-full min-h-screen flex items-center justify-center">
-  <Image
-    src="/image_3.png"
-    alt="Hexaprime Background"
-    fill
-    className="object-cover w-full h-full"
-    priority
-  />
-  <div className="absolute inset-0 bg-black/50"></div>
-  <div className="relative z-10 flex flex-col items-end justify-end text-right px-6 py-10 max-w-7xl w-full">
-    <h2 className="max-w-6xl text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
-      Committed to Community Resilience
-    </h2>
-    <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-      Hexaprime Inc. operates with the belief that giving should create lasting change. 
-      Our social responsibility practices reflect our dedication to ethical action, 
-      transparent operations, and community empowerment.
-    </p>
-  </div>
-</section>
+    {/* Committed to Community Resilience */}
+      <section className="relative w-full min-h-screen">
+        <Image
+          src="/image_3.png"
+          alt="Hexaprime Background"
+          fill
+          className="object-cover w-full h-full"
+          priority
+          />
+      <div className="absolute inset-0 bg-black/50"></div>
+  
+    {/* Text block positioned bottom-right */}
+      <div className="absolute bottom-10 right-10 z-10 max-w-7xl text-right">
+        <h2 className="max-w-6xl text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent leading-snug sm:leading-tight">
+          Committed to Community Resilience
+        </h2>
+          <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+            Hexaprime Inc. operates with the belief that giving should create lasting change. 
+            Our social responsibility practices reflect our dedication to ethical action, 
+            transparent operations, and community empowerment.
+          </p>
+        </div>
+      </section>
+
 
       
      {/* new section*/}
