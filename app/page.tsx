@@ -177,7 +177,7 @@ export default function Home() {
       </section>
       
      {/* Pillars Section */}
-      <section className="py-16 px-4 md:px-16 bg-black/50">
+      <section className="py-16 px-4 md:px-16 bg-black">
         <div className="flex justify-center mb-12">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Our Pillars of Responsibility
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 md:px-16 bg-black/50 text-center text-white">
+      <footer className="py-8 px-4 md:px-16 bg-black text-center text-white">
         <p>© 2025 Hexaprime Inc. All Rights Reserved.</p>
       </footer>
     </main>
