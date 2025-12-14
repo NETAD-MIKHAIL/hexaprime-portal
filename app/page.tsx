@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect, useState } from "react";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -15,6 +15,7 @@ export default function Home() {
   const [funds, setFunds] = useState(0);
   const [volunteers, setVolunteers] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const duration = 2000;
@@ -122,15 +123,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white">
-        <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
-          Our Mission
-        </h2>
-        <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
-          To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
-        </p>
-      </section>
+useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.2 } // triggers when 20% of section is visible
+    );
+
+    const section = document.querySelector("#mission-section");
+    if (section) observer.observe(section);
+
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, []);
+
+  return (
+    <section
+      id="mission-section"
+      className={`flex flex-col items-center justify-center text-center min-h-fit py-5 px-4 md:px-16 bg-black text-white 
+      transition-all duration-1000 ease-in-out 
+      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+    >
+      <h2 className="max-w-6xl text-center text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
+        Our Mission
+      </h2>
+      <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+        To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
+      </p>
+    </section>
+  );
+      }
 
 {/* Together, We Make Hope Happen */}
 <section className="relative w-full min-h-screen flex items-end justify-start">
