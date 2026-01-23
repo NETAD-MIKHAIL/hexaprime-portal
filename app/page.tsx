@@ -53,7 +53,7 @@ export default function Home() {
       {/* Header */}
       <header
         className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-6"
+          isScrolled ? "bg-black shadow-lg py-2" : "bg-transparent py-6"
         }`}
       >
         <nav className="relative max-w-8xl mx-auto flex justify-between items-center px-8 transition-all duration-300">
