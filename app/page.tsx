@@ -111,12 +111,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50"></div>
       
         {/* Content */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black">
-        <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl">
+         <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 py-5 max-w-7xl animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent leading-snug sm:leading-tight">
             Sharing Care, Beyond the line with Hexaprime!
           </h1>
-          <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
+          <p className="mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light animate-fade-in">
             “At Hexaprime Inc., we believe that hope should never be out of reach. 
             We are a charity sweepstakes organization dedicated to supporting communities on the brink of — or recovering from — natural calamities. 
             Through engaging sweepstakes, generous donors, and community-driven initiatives, we transform fun participation into meaningful impact.”
@@ -132,7 +131,6 @@ export default function Home() {
         <p className="max-w-7xl mt-6 text-white/80 text-sm sm:text-base md:text-lg leading-snug font-light">
           To provide rapid, effective, and compassionate relief for communities facing disasters, ensuring they receive the resources and support needed to rebuild and thrive. Your contribution supports emergency response, disaster relief, and long-term recovery programs. We give back directly to affected communities, ensuring transparency and real results.
         </p>
-        </div>
       </section>
 
 {/* Together, We Make Hope Happen */}
