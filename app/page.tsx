@@ -69,21 +69,21 @@ export default function Home() {
           <ul className="hidden md:flex items-center text-white/90 font-medium ml-8">
             <li className="flex items-center">
               <span
-                className="cursor-pointer transition px-3 py-2 hover:text-gray-700"
+                className="cursor-pointer transition px-3 py-2 hover:text-gray-400"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >
                 Home
               </span>
             </li>
             <li className="flex items-center ml-3">
-              <span className="cursor-pointer transition px-3 py-2 hover:text-gray-700">
+              <span className="cursor-pointer transition px-3 py-2 hover:text-gray-400">
                 Social Responsibility
               </span>
             </li>
             <li className="flex items-center ml-3">
               <a
                 href="/contact_us"
-                className="cursor-pointer transition px-3 py-2 hover:text-gray-700"
+                className="cursor-pointer transition px-3 py-2 hover:text-gray-400"
               >
                 Contact Us
               </a>
